@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
             ),
             InfoCard(
               title: "New Cases",
-              effectedNum: 52,
+              effectedNum: 51,
               iconColor: Color(0xFF5856D6),
             ),
           ],
