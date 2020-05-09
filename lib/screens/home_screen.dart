@@ -12,11 +12,11 @@ class HomeScreen extends StatelessWidget {
         padding: EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 40),
         width: double.infinity,
         decoration: BoxDecoration(
-            color: kPrimaryColor.withOpacity(.03),
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(50),
-              bottomRight: Radius.circular(50),
-            ),
+          color: kPrimaryColor.withOpacity(.03),
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(50),
+            bottomRight: Radius.circular(50),
+          ),
         ),
         child: Wrap(
           runSpacing: 20,
