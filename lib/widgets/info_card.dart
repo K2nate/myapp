@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../constants.dart';
 
+@immutable
 class InfoCard extends StatelessWidget {
   final String title;
   final int effectedNum;
@@ -73,8 +74,9 @@ class InfoCard extends StatelessWidget {
                                   ),
                             ),
                             TextSpan(
-                                text: "People",
-                                style: TextStyle(fontSize: 12, height: 2)),
+                              text: "People",
+                              style: TextStyle(fontSize: 12, height: 2),
+                            ),
                           ],
                         ),
                       ),
