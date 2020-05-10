@@ -66,7 +66,7 @@ class InfoCard extends StatelessWidget {
                           children: [
                             TextSpan(
                               text: "$effectedNum \n",
-                              style: Theme.of(context).textTheme.title.copyWith(
+                              style: Theme.of(context).textTheme.headline5.copyWith(
                                     fontWeight: FontWeight.bold,
                                   ),
                             ),
