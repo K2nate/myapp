@@ -53,10 +53,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: kBackGroundColor.withOpacity(.03),
       elevation: 0,
       leading: IconButton(
-        icon: SvgPicture.asset(
-          "assets/icons/menu.svg",
-          color: kPrimaryColor,
-        ),
+        icon: Icon(Icons.menu, color: kPrimaryColor),
         onPressed: () {},
       ),
     );
