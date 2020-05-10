@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../constants.dart';
 
@@ -39,11 +38,9 @@ class InfoCard extends StatelessWidget {
                         color: iconColor.withOpacity(.12),
                         shape: BoxShape.circle,
                       ),
-                      child: SvgPicture.asset(
-                        "assets/icons/runner.svg",
+                      child: Icon(
+                        Icons.directions_run,
                         color: iconColor,
-                        height: 20,
-                        width: 20,
                       ),
                     ),
                     SizedBox(
