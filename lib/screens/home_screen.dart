@@ -56,6 +56,11 @@ class HomeScreen extends StatelessWidget {
         icon: Icon(Icons.menu, color: kPrimaryColor),
         onPressed: () {},
       ),
+      actions: <Widget>[
+        IconButton(
+            icon: Icon(Icons.search, color: kPrimaryColor),
+            onPressed: () {}),
+      ],
     );
   }
 }
