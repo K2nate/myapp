@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/constants.dart';
+import 'package:myapp/screens/details_screen.dart';
 import 'package:myapp/widgets/info_card.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -25,21 +26,34 @@ class HomeScreen extends StatelessWidget {
               title: "Confirmed Cases",
               effectedNum: 1062,
               iconColor: Color(0xFFFF8C00),
+              press: () {},
             ),
             InfoCard(
               title: "Total Deaths",
               effectedNum: 75,
               iconColor: Color(0xFFFF2D55),
+              press: () {},
             ),
             InfoCard(
               title: "Total Recovered",
               effectedNum: 689,
               iconColor: Color(0xFF50E3C2),
+              press: () {},
             ),
             InfoCard(
               title: "New Cases",
               effectedNum: 52,
               iconColor: Color(0xFF5856D6),
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return DetailsScreen();
+                    },
+                  ),
+                );
+              },
             ),
           ],
         ),
@@ -57,8 +71,7 @@ class HomeScreen extends StatelessWidget {
       ),
       actions: <Widget>[
         IconButton(
-            icon: Icon(Icons.search, color: kPrimaryColor),
-            onPressed: () {}),
+            icon: Icon(Icons.search, color: kPrimaryColor), onPressed: () {}),
       ],
     );
   }

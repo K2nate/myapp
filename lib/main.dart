@@ -14,11 +14,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: kBackGroundColor,
-        textTheme: Theme.of(context).textTheme.apply(displayColor : kTextColor),
-       
+        textTheme: Theme.of(context).textTheme.apply(displayColor: kTextColor),
       ),
       home: HomeScreen(),
     );
   }
 }
-
