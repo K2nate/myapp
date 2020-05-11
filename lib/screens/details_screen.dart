@@ -18,9 +18,7 @@ class DetailsScreen extends StatelessWidget {
           Icons.arrow_back_ios,
           color: kPrimaryColor,
         ),
-        onPressed: () {
-          Navigator.pop(context);
-        },
+        onPressed: () => Navigator.pop(context),
       ),
       actions: <Widget>[
         IconButton(
