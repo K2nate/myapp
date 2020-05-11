@@ -39,7 +39,7 @@ class InfoCard extends StatelessWidget {
                         shape: BoxShape.circle,
                       ),
                       child: Icon(
-                        Icons.directions_run,
+                        Icons.people,
                         color: iconColor,
                       ),
                     ),
