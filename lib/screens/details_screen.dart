@@ -6,6 +6,50 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildDetailsAppBar(context),
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      offset: Offset(0, 21),
+                      blurRadius: 53,
+                      color: Colors.black.withOpacity(0.05),
+                    )
+                  ]),
+              child: Column(
+                children: <Widget>[
+                  buildTitleWithMoreIcon(),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Row buildTitleWithMoreIcon() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        Text(
+          "New Cases",
+          style: TextStyle(
+            color: kTextMediumColor,
+            fontWeight: FontWeight.w600,
+            fontSize: 15,
+          ),
+        ),
+        Icon(
+          Icons.more_vert,
+        )
+      ],
     );
   }
 
