@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/constants.dart';
+import 'package:myapp/widgets/weekly_chart.dart';
 
 class DetailsScreen extends StatelessWidget {
   @override
@@ -41,6 +42,7 @@ class DetailsScreen extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
+                  WeeklyChart(),
                 ],
               ),
             ),
