@@ -23,14 +23,52 @@ class DetailsScreen extends StatelessWidget {
                     )
                   ]),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   buildTitleWithMoreIcon(),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  buildCaseNumber(context),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "From Health Center",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w300,
+                      color: kTextMediumColor,
+                      fontSize: 16,
+                    ),
+                  ),
                 ],
               ),
             ),
           ],
         ),
       ),
+    );
+  }
+
+  Row buildCaseNumber(BuildContext context) {
+    return Row(
+      children: <Widget>[
+        Text(
+          "547",
+          style: Theme.of(context)
+              .textTheme
+              .headline2
+              .copyWith(color: kPrimaryColor, height: 1.2),
+        ),
+        Text(
+          "5.9%",
+          style: TextStyle(color: kPrimaryColor),
+        ),
+        Icon(
+          Icons.trending_up,
+          color: kPrimaryColor,
+        )
+      ],
     );
   }
 
