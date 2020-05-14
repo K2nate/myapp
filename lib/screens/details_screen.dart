@@ -42,12 +42,54 @@ class DetailsScreen extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   WeeklyChart(),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      buildInfoTextWithPercentage(
+                        title: "From Last Week",
+                        percentage: "6.43",
+                      ),
+                      buildInfoTextWithPercentage(
+                        title: "Recovery Rate",
+                        percentage: "9.43",
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  RichText buildInfoTextWithPercentage({String title, String percentage}) {
+    return RichText(
+      text: TextSpan(
+        children: [
+          TextSpan(
+            text: "$percentage% \n",
+            style: TextStyle(
+              fontSize: 20,
+              color: kPrimaryColor,
+            ),
+          ),
+          TextSpan(
+            text: title,
+            style: TextStyle(
+              color: kTextMediumColor,
+              height: 1.5,
+            ),
+          ),
+        ],
       ),
     );
   }
